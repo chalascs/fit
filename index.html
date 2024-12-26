@@ -45,18 +45,23 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-gradient relative h-screen flex items-center">
-        <!-- Background Image - Replace src with your image -->
-        <img src="img/main.jpg" alt="Fitness Background" class="absolute inset-0 w-full h-full object-cover -z-10">
-        
-        <div class="container mx-auto px-4 text-center text-white">
-            <h1 class="text-5xl font-bold mb-6">Transform Your Life With Professional Guidance</h1>
-            <p class="text-xl mb-8">Personalized workout plans and nutrition advice to help you reach your fitness goals</p>
-            <button class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700">
-                Start Your Journey
-            </button>
+     <!-- Hero Section -->
+<section id="home" class="relative h-screen flex items-center overflow-hidden">
+    <!-- Video Background Container -->
+    <div class="absolute inset-0 w-full h-full">
+        <!-- YouTube iFrame - Replace VIDEO_ID with your chosen video ID -->
+        <div class="relative w-full h-full">
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/Yko3GMseY40?autoplay=1&mute=1&loop=1&playlist=Yko3GMseY40&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <!-- Overlay for the faded effect -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
         </div>
+    </div>
     </section>
 
     <!-- Programs Section -->
